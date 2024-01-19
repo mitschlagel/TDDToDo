@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "5F81B7BB-CACA-4091-B95F-9406F25AEE09",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ToDo-UIKit.xcodeproj",
+      "identifier" : "F72F9F5F2B5981770025990F",
+      "name" : "ToDo-UIKit"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ToDo-UIKit.xcodeproj",
+        "identifier" : "F72F9F752B59818E0025990F",
+        "name" : "ToDo-UIKitTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ToDo-UIKit.xcodeproj",
+        "identifier" : "F72F9F7F2B59818E0025990F",
+        "name" : "ToDo-UIKitUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

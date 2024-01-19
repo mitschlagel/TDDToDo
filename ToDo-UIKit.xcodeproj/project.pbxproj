@@ -16,6 +16,10 @@
 		F72F9F7B2B59818E0025990F /* ToDo_UIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F7A2B59818E0025990F /* ToDo_UIKitTests.swift */; };
 		F72F9F852B59818E0025990F /* ToDo_UIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F842B59818E0025990F /* ToDo_UIKitUITests.swift */; };
 		F72F9F872B59818E0025990F /* ToDo_UIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F862B59818E0025990F /* ToDo_UIKitUITestsLaunchTests.swift */; };
+		F72F9F952B5B2A390025990F /* ToDoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F942B5B2A390025990F /* ToDoItemTests.swift */; };
+		F72F9F972B5B2ADD0025990F /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F962B5B2ADD0025990F /* ToDoItem.swift */; };
+		F72F9F992B5B30A90025990F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F982B5B30A90025990F /* Location.swift */; };
+		F72F9F9B2B5B31950025990F /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F9A2B5B31950025990F /* LocationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,11 @@
 		F72F9F802B59818E0025990F /* ToDo-UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ToDo-UIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72F9F842B59818E0025990F /* ToDo_UIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo_UIKitUITests.swift; sourceTree = "<group>"; };
 		F72F9F862B59818E0025990F /* ToDo_UIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo_UIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F72F9F932B5B285F0025990F /* ToDo-UIKit.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ToDo-UIKit.xctestplan"; sourceTree = "<group>"; };
+		F72F9F942B5B2A390025990F /* ToDoItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemTests.swift; sourceTree = "<group>"; };
+		F72F9F962B5B2ADD0025990F /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		F72F9F982B5B30A90025990F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F72F9F9A2B5B31950025990F /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +88,7 @@
 		F72F9F572B5981770025990F = {
 			isa = PBXGroup;
 			children = (
+				F72F9F932B5B285F0025990F /* ToDo-UIKit.xctestplan */,
 				F72F9F622B5981770025990F /* ToDo-UIKit */,
 				F72F9F792B59818E0025990F /* ToDo-UIKitTests */,
 				F72F9F832B59818E0025990F /* ToDo-UIKitUITests */,
@@ -106,6 +116,8 @@
 				F72F9F6C2B59818E0025990F /* Assets.xcassets */,
 				F72F9F6E2B59818E0025990F /* LaunchScreen.storyboard */,
 				F72F9F712B59818E0025990F /* Info.plist */,
+				F72F9F962B5B2ADD0025990F /* ToDoItem.swift */,
+				F72F9F982B5B30A90025990F /* Location.swift */,
 			);
 			path = "ToDo-UIKit";
 			sourceTree = "<group>";
@@ -114,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				F72F9F7A2B59818E0025990F /* ToDo_UIKitTests.swift */,
+				F72F9F942B5B2A390025990F /* ToDoItemTests.swift */,
+				F72F9F9A2B5B31950025990F /* LocationTests.swift */,
 			);
 			path = "ToDo-UIKitTests";
 			sourceTree = "<group>";
@@ -260,6 +274,8 @@
 			files = (
 				F72F9F682B5981770025990F /* ViewController.swift in Sources */,
 				F72F9F642B5981770025990F /* AppDelegate.swift in Sources */,
+				F72F9F992B5B30A90025990F /* Location.swift in Sources */,
+				F72F9F972B5B2ADD0025990F /* ToDoItem.swift in Sources */,
 				F72F9F662B5981770025990F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F72F9F952B5B2A390025990F /* ToDoItemTests.swift in Sources */,
+				F72F9F9B2B5B31950025990F /* LocationTests.swift in Sources */,
 				F72F9F7B2B59818E0025990F /* ToDo_UIKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

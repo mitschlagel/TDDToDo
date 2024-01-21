@@ -20,6 +20,10 @@
 		F72F9F972B5B2ADD0025990F /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F962B5B2ADD0025990F /* ToDoItem.swift */; };
 		F72F9F992B5B30A90025990F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F982B5B30A90025990F /* Location.swift */; };
 		F72F9F9B2B5B31950025990F /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F9A2B5B31950025990F /* LocationTests.swift */; };
+		F72F9F9D2B5C67ED0025990F /* ToDoItemStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F9C2B5C67ED0025990F /* ToDoItemStoreTests.swift */; };
+		F72F9F9F2B5C6B130025990F /* ToDoItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F9E2B5C6B130025990F /* ToDoItemStore.swift */; };
+		F72F9FA12B5C9F6D0025990F /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9FA02B5C9F6D0025990F /* Coordinate.swift */; };
+		F72F9FA32B5CA4110025990F /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9FA22B5CA4110025990F /* FileManagerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		F72F9F962B5B2ADD0025990F /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		F72F9F982B5B30A90025990F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F72F9F9A2B5B31950025990F /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
+		F72F9F9C2B5C67ED0025990F /* ToDoItemStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemStoreTests.swift; sourceTree = "<group>"; };
+		F72F9F9E2B5C6B130025990F /* ToDoItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemStore.swift; sourceTree = "<group>"; };
+		F72F9FA02B5C9F6D0025990F /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		F72F9FA22B5CA4110025990F /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,9 @@
 				F72F9F712B59818E0025990F /* Info.plist */,
 				F72F9F962B5B2ADD0025990F /* ToDoItem.swift */,
 				F72F9F982B5B30A90025990F /* Location.swift */,
+				F72F9F9E2B5C6B130025990F /* ToDoItemStore.swift */,
+				F72F9FA02B5C9F6D0025990F /* Coordinate.swift */,
+				F72F9FA22B5CA4110025990F /* FileManagerExtension.swift */,
 			);
 			path = "ToDo-UIKit";
 			sourceTree = "<group>";
@@ -128,6 +139,7 @@
 				F72F9F7A2B59818E0025990F /* ToDo_UIKitTests.swift */,
 				F72F9F942B5B2A390025990F /* ToDoItemTests.swift */,
 				F72F9F9A2B5B31950025990F /* LocationTests.swift */,
+				F72F9F9C2B5C67ED0025990F /* ToDoItemStoreTests.swift */,
 			);
 			path = "ToDo-UIKitTests";
 			sourceTree = "<group>";
@@ -272,10 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F72F9FA12B5C9F6D0025990F /* Coordinate.swift in Sources */,
 				F72F9F682B5981770025990F /* ViewController.swift in Sources */,
 				F72F9F642B5981770025990F /* AppDelegate.swift in Sources */,
 				F72F9F992B5B30A90025990F /* Location.swift in Sources */,
 				F72F9F972B5B2ADD0025990F /* ToDoItem.swift in Sources */,
+				F72F9FA32B5CA4110025990F /* FileManagerExtension.swift in Sources */,
+				F72F9F9F2B5C6B130025990F /* ToDoItemStore.swift in Sources */,
 				F72F9F662B5981770025990F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F72F9F9D2B5C67ED0025990F /* ToDoItemStoreTests.swift in Sources */,
 				F72F9F952B5B2A390025990F /* ToDoItemTests.swift in Sources */,
 				F72F9F9B2B5B31950025990F /* LocationTests.swift in Sources */,
 				F72F9F7B2B59818E0025990F /* ToDo_UIKitTests.swift in Sources */,

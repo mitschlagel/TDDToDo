@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9E6DD4F2-4604-4C23-923A-0317A39F217C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A211CD1-B709-4BDF-B7B1-C99C5DE2787B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ToDo-UIKitTests/ToDoItemStoreTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "test_init_shouldLoadPreviousToDoItems()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6A211CD1-B709-4BDF-B7B1-C99C5DE2787B - 3a7de62baf1283bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDo_UIKitTests.ToDoItemStoreTests.test_init_shouldLoadPreviousToDoItems() throws -&gt; ()"
+                  moduleName = "ToDo-UIKitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/spencerjones/Code/practice/ToDo-UIKit/ToDo-UIKitTests/ToDoItemStoreTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "153">
+               </Location>
+               <Location
+                  uuid = "6A211CD1-B709-4BDF-B7B1-C99C5DE2787B - 3a7de62baf1280c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ToDo_UIKitTests.ToDoItemStoreTests.test_init_shouldLoadPreviousToDoItems() throws -&gt; ()"
+                  moduleName = "ToDo-UIKitTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/spencerjones/Code/practice/ToDo-UIKit/ToDo-UIKitTests/ToDoItemStoreTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "153">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

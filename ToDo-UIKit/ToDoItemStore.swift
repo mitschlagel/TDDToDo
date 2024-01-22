@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-class ToDoItemStore {
+class ToDoItemStore: ToDoItemStoreProtocol {
     
     var itemPublisher = CurrentValueSubject<[ToDoItem], Never>([]) //[ToDoItem] = what is sent, Never = the failure type
     
@@ -60,6 +60,9 @@ class ToDoItemStore {
             print("error: \(error)")
         }
     }
-    
-    
+}
+
+protocol ToDoItemStoreProtocol {
+    var itemPublisher: CurrentValueSubject<[ToDoItem], Never> { get set }
+    func check(_: ToDoItem)
 }

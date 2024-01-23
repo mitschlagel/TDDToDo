@@ -30,6 +30,10 @@ struct ToDoItem: Equatable, Codable {
     static func == (lhs: ToDoItem, rhs: ToDoItem) -> Bool {
         lhs.id == rhs.id
     }
-    
-    
+}
+
+extension ToDoItem: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }

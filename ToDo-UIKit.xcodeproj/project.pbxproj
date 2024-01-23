@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7191B712B5F77D2009D1735 /* ToDoItemsListViewControllerProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7191B702B5F77D2009D1735 /* ToDoItemsListViewControllerProtocolMock.swift */; };
 		F72F9F642B5981770025990F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F632B5981770025990F /* AppDelegate.swift */; };
 		F72F9F662B5981770025990F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F652B5981770025990F /* SceneDelegate.swift */; };
 		F72F9F682B5981770025990F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9F672B5981770025990F /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F7191B702B5F77D2009D1735 /* ToDoItemsListViewControllerProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemsListViewControllerProtocolMock.swift; sourceTree = "<group>"; };
 		F72F9F602B5981770025990F /* ToDo-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72F9F632B5981770025990F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F72F9F652B5981770025990F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				F72F9F7A2B59818E0025990F /* ToDo_UIKitTests.swift */,
+				F7191B702B5F77D2009D1735 /* ToDoItemsListViewControllerProtocolMock.swift */,
 				F72F9F942B5B2A390025990F /* ToDoItemTests.swift */,
 				F72F9F9A2B5B31950025990F /* LocationTests.swift */,
 				F72F9F9C2B5C67ED0025990F /* ToDoItemStoreTests.swift */,
@@ -323,6 +326,7 @@
 				F72F9F9B2B5B31950025990F /* LocationTests.swift in Sources */,
 				F72F9FAF2B5E25800025990F /* ToDoItemCellTests.swift in Sources */,
 				F72F9F7B2B59818E0025990F /* ToDo_UIKitTests.swift in Sources */,
+				F7191B712B5F77D2009D1735 /* ToDoItemsListViewControllerProtocolMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -80,4 +80,22 @@ final class ToDoItemsListViewControllerTests: XCTestCase {
         XCTAssertEqual(cell.titleLabel.text, titleUnderTest)
     }
     
+    func test_cellForRowAt_shouldReturnCellWithDate() throws {
+        let date = Date()
+        toDoItemStoreMock.itemPublisher
+            .send([
+                ToDoItem(title: "mock 1",
+                         timestamp: date.timeIntervalSince1970)
+            ])
+        let tableView = try XCTUnwrap(sut.tableView)
+        
+        let indexPath = IndexPath(row: 0, section: 0)
+        let cell = try XCTUnwrap(
+            tableView.dataSource?
+                .tableView(tableView, cellForRowAt: indexPath)
+            as? ToDoItemCell
+        )
+        XCTAssertEqual(cell.dateLabel.text, sut.dateFormatter.string(from: date))
+    }
+    
 }

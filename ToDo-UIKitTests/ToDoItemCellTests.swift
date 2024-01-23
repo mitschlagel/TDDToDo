@@ -6,15 +6,33 @@
 //
 
 import XCTest
+@testable import ToDo_UIKit
 
 final class ToDoItemCellTests: XCTestCase {
-
+    
+    var sut: ToDoItemCell!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        sut = ToDoItemCell()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
+    }
+    
+    func test_hasTitleLabelSubview() {
+        let subview = sut.titleLabel
+        XCTAssertTrue(subview.isDescendant(of: sut.contentView))
+    }
+    
+    func test_hasDateLabelSubview() {
+        let subview = sut.dateLabel
+        XCTAssertTrue(subview.isDescendant(of: sut.contentView))
+    }
+    
+    func test_hasLocationLabelSubview() {
+        let subview = sut.locationLabel
+        XCTAssertTrue(subview.isDescendant(of: sut.contentView))
     }
 
 

@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import ToDo_UIKit
+@testable import TDDToDo
 
 final class ToDoItemsListViewControllerTests: XCTestCase {
 

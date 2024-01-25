@@ -51,7 +51,7 @@
 
 /* Begin PBXFileReference section */
 		F7191B702B5F77D2009D1735 /* ToDoItemsListViewControllerProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemsListViewControllerProtocolMock.swift; sourceTree = "<group>"; };
-		F72F9F602B5981770025990F /* ToDo-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72F9F602B5981770025990F /* TDDToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72F9F632B5981770025990F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F72F9F652B5981770025990F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F72F9F672B5981770025990F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,12 +59,12 @@
 		F72F9F6C2B59818E0025990F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F72F9F6F2B59818E0025990F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F72F9F712B59818E0025990F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F72F9F762B59818E0025990F /* ToDo-UIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ToDo-UIKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72F9F762B59818E0025990F /* TDDToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72F9F7A2B59818E0025990F /* ToDo_UIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo_UIKitTests.swift; sourceTree = "<group>"; };
-		F72F9F802B59818E0025990F /* ToDo-UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ToDo-UIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72F9F802B59818E0025990F /* TDDToDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDToDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72F9F842B59818E0025990F /* ToDo_UIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo_UIKitUITests.swift; sourceTree = "<group>"; };
 		F72F9F862B59818E0025990F /* ToDo_UIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo_UIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F72F9F932B5B285F0025990F /* ToDo-UIKit.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ToDo-UIKit.xctestplan"; sourceTree = "<group>"; };
+		F72F9F932B5B285F0025990F /* TDDToDo.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TDDToDo.xctestplan; sourceTree = "<group>"; };
 		F72F9F942B5B2A390025990F /* ToDoItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemTests.swift; sourceTree = "<group>"; };
 		F72F9F962B5B2ADD0025990F /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		F72F9F982B5B30A90025990F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -108,10 +108,10 @@
 		F72F9F572B5981770025990F = {
 			isa = PBXGroup;
 			children = (
-				F72F9F932B5B285F0025990F /* ToDo-UIKit.xctestplan */,
-				F72F9F622B5981770025990F /* ToDo-UIKit */,
-				F72F9F792B59818E0025990F /* ToDo-UIKitTests */,
-				F72F9F832B59818E0025990F /* ToDo-UIKitUITests */,
+				F72F9F932B5B285F0025990F /* TDDToDo.xctestplan */,
+				F72F9F622B5981770025990F /* TDDToDo */,
+				F72F9F792B59818E0025990F /* TDDToDoTests */,
+				F72F9F832B59818E0025990F /* TDDToDoUITests */,
 				F72F9F612B5981770025990F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,14 +119,14 @@
 		F72F9F612B5981770025990F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F72F9F602B5981770025990F /* ToDo-UIKit.app */,
-				F72F9F762B59818E0025990F /* ToDo-UIKitTests.xctest */,
-				F72F9F802B59818E0025990F /* ToDo-UIKitUITests.xctest */,
+				F72F9F602B5981770025990F /* TDDToDo.app */,
+				F72F9F762B59818E0025990F /* TDDToDoTests.xctest */,
+				F72F9F802B59818E0025990F /* TDDToDoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F72F9F622B5981770025990F /* ToDo-UIKit */ = {
+		F72F9F622B5981770025990F /* TDDToDo */ = {
 			isa = PBXGroup;
 			children = (
 				F72F9F632B5981770025990F /* AppDelegate.swift */,
@@ -144,10 +144,10 @@
 				F72F9FA22B5CA4110025990F /* FileManagerExtension.swift */,
 				F72F9FAC2B5E22050025990F /* ToDoItemCell.swift */,
 			);
-			path = "ToDo-UIKit";
+			path = TDDToDo;
 			sourceTree = "<group>";
 		};
-		F72F9F792B59818E0025990F /* ToDo-UIKitTests */ = {
+		F72F9F792B59818E0025990F /* TDDToDoTests */ = {
 			isa = PBXGroup;
 			children = (
 				F72F9F7A2B59818E0025990F /* ToDo_UIKitTests.swift */,
@@ -159,24 +159,24 @@
 				F72F9FAA2B5E1D110025990F /* ToDoItemStoreProtocolMock.swift */,
 				F72F9FAE2B5E25800025990F /* ToDoItemCellTests.swift */,
 			);
-			path = "ToDo-UIKitTests";
+			path = TDDToDoTests;
 			sourceTree = "<group>";
 		};
-		F72F9F832B59818E0025990F /* ToDo-UIKitUITests */ = {
+		F72F9F832B59818E0025990F /* TDDToDoUITests */ = {
 			isa = PBXGroup;
 			children = (
 				F72F9F842B59818E0025990F /* ToDo_UIKitUITests.swift */,
 				F72F9F862B59818E0025990F /* ToDo_UIKitUITestsLaunchTests.swift */,
 			);
-			path = "ToDo-UIKitUITests";
+			path = TDDToDoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F72F9F5F2B5981770025990F /* ToDo-UIKit */ = {
+		F72F9F5F2B5981770025990F /* TDDToDo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F72F9F8A2B59818E0025990F /* Build configuration list for PBXNativeTarget "ToDo-UIKit" */;
+			buildConfigurationList = F72F9F8A2B59818E0025990F /* Build configuration list for PBXNativeTarget "TDDToDo" */;
 			buildPhases = (
 				F72F9F5C2B5981770025990F /* Sources */,
 				F72F9F5D2B5981770025990F /* Frameworks */,
@@ -186,14 +186,14 @@
 			);
 			dependencies = (
 			);
-			name = "ToDo-UIKit";
+			name = TDDToDo;
 			productName = "ToDo-UIKit";
-			productReference = F72F9F602B5981770025990F /* ToDo-UIKit.app */;
+			productReference = F72F9F602B5981770025990F /* TDDToDo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F72F9F752B59818E0025990F /* ToDo-UIKitTests */ = {
+		F72F9F752B59818E0025990F /* TDDToDoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F72F9F8D2B59818E0025990F /* Build configuration list for PBXNativeTarget "ToDo-UIKitTests" */;
+			buildConfigurationList = F72F9F8D2B59818E0025990F /* Build configuration list for PBXNativeTarget "TDDToDoTests" */;
 			buildPhases = (
 				F72F9F722B59818E0025990F /* Sources */,
 				F72F9F732B59818E0025990F /* Frameworks */,
@@ -204,14 +204,14 @@
 			dependencies = (
 				F72F9F782B59818E0025990F /* PBXTargetDependency */,
 			);
-			name = "ToDo-UIKitTests";
+			name = TDDToDoTests;
 			productName = "ToDo-UIKitTests";
-			productReference = F72F9F762B59818E0025990F /* ToDo-UIKitTests.xctest */;
+			productReference = F72F9F762B59818E0025990F /* TDDToDoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F72F9F7F2B59818E0025990F /* ToDo-UIKitUITests */ = {
+		F72F9F7F2B59818E0025990F /* TDDToDoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F72F9F902B59818E0025990F /* Build configuration list for PBXNativeTarget "ToDo-UIKitUITests" */;
+			buildConfigurationList = F72F9F902B59818E0025990F /* Build configuration list for PBXNativeTarget "TDDToDoUITests" */;
 			buildPhases = (
 				F72F9F7C2B59818E0025990F /* Sources */,
 				F72F9F7D2B59818E0025990F /* Frameworks */,
@@ -222,9 +222,9 @@
 			dependencies = (
 				F72F9F822B59818E0025990F /* PBXTargetDependency */,
 			);
-			name = "ToDo-UIKitUITests";
+			name = TDDToDoUITests;
 			productName = "ToDo-UIKitUITests";
-			productReference = F72F9F802B59818E0025990F /* ToDo-UIKitUITests.xctest */;
+			productReference = F72F9F802B59818E0025990F /* TDDToDoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -250,7 +250,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F72F9F5B2B5981770025990F /* Build configuration list for PBXProject "ToDo-UIKit" */;
+			buildConfigurationList = F72F9F5B2B5981770025990F /* Build configuration list for PBXProject "TDDToDo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -263,9 +263,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F72F9F5F2B5981770025990F /* ToDo-UIKit */,
-				F72F9F752B59818E0025990F /* ToDo-UIKitTests */,
-				F72F9F7F2B59818E0025990F /* ToDo-UIKitUITests */,
+				F72F9F5F2B5981770025990F /* TDDToDo */,
+				F72F9F752B59818E0025990F /* TDDToDoTests */,
+				F72F9F7F2B59818E0025990F /* TDDToDoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -344,12 +344,12 @@
 /* Begin PBXTargetDependency section */
 		F72F9F782B59818E0025990F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F72F9F5F2B5981770025990F /* ToDo-UIKit */;
+			target = F72F9F5F2B5981770025990F /* TDDToDo */;
 			targetProxy = F72F9F772B59818E0025990F /* PBXContainerItemProxy */;
 		};
 		F72F9F822B59818E0025990F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F72F9F5F2B5981770025990F /* ToDo-UIKit */;
+			target = F72F9F5F2B5981770025990F /* TDDToDo */;
 			targetProxy = F72F9F812B59818E0025990F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -497,7 +497,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2X792CPSD3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ToDo-UIKit/Info.plist";
+				INFOPLIST_FILE = TDDToDo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -508,7 +508,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.spencer.ToDo-UIKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spencer.TDDToDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -525,7 +525,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2X792CPSD3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ToDo-UIKit/Info.plist";
+				INFOPLIST_FILE = TDDToDo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -536,7 +536,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.spencer.ToDo-UIKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spencer.TDDToDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -552,15 +552,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2X792CPSD3;
+				GCC_PREFIX_HEADER = TDDToDo;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.spencer.ToDo-UIKitTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spencer.TDDToDoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToDo-UIKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ToDo-UIKit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDToDo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TDDToDo";
 			};
 			name = Debug;
 		};
@@ -572,15 +573,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2X792CPSD3;
+				GCC_PREFIX_HEADER = TDDToDo;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.spencer.ToDo-UIKitTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spencer.TDDToDoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToDo-UIKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ToDo-UIKit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDToDo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TDDToDo";
 			};
 			name = Release;
 		};
@@ -623,7 +625,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F72F9F5B2B5981770025990F /* Build configuration list for PBXProject "ToDo-UIKit" */ = {
+		F72F9F5B2B5981770025990F /* Build configuration list for PBXProject "TDDToDo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F72F9F882B59818E0025990F /* Debug */,
@@ -632,7 +634,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F72F9F8A2B59818E0025990F /* Build configuration list for PBXNativeTarget "ToDo-UIKit" */ = {
+		F72F9F8A2B59818E0025990F /* Build configuration list for PBXNativeTarget "TDDToDo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F72F9F8B2B59818E0025990F /* Debug */,
@@ -641,7 +643,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F72F9F8D2B59818E0025990F /* Build configuration list for PBXNativeTarget "ToDo-UIKitTests" */ = {
+		F72F9F8D2B59818E0025990F /* Build configuration list for PBXNativeTarget "TDDToDoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F72F9F8E2B59818E0025990F /* Debug */,
@@ -650,7 +652,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F72F9F902B59818E0025990F /* Build configuration list for PBXNativeTarget "ToDo-UIKitUITests" */ = {
+		F72F9F902B59818E0025990F /* Build configuration list for PBXNativeTarget "TDDToDoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F72F9F912B59818E0025990F /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F72F9F5F2B5981770025990F"
-               BuildableName = "ToDo-UIKit.app"
-               BlueprintName = "ToDo-UIKit"
-               ReferencedContainer = "container:ToDo-UIKit.xcodeproj">
+               BuildableName = "TDDToDo.app"
+               BlueprintName = "TDDToDo"
+               ReferencedContainer = "container:TDDToDo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:ToDo-UIKit.xctestplan"
+            reference = "container:TDDToDo.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -40,9 +40,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F72F9F752B59818E0025990F"
-               BuildableName = "ToDo-UIKitTests.xctest"
-               BlueprintName = "ToDo-UIKitTests"
-               ReferencedContainer = "container:ToDo-UIKit.xcodeproj">
+               BuildableName = "TDDToDoTests.xctest"
+               BlueprintName = "TDDToDoTests"
+               ReferencedContainer = "container:TDDToDo.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -51,9 +51,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F72F9F7F2B59818E0025990F"
-               BuildableName = "ToDo-UIKitUITests.xctest"
-               BlueprintName = "ToDo-UIKitUITests"
-               ReferencedContainer = "container:ToDo-UIKit.xcodeproj">
+               BuildableName = "TDDToDoUITests.xctest"
+               BlueprintName = "TDDToDoUITests"
+               ReferencedContainer = "container:TDDToDo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -73,9 +73,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F72F9F5F2B5981770025990F"
-            BuildableName = "ToDo-UIKit.app"
-            BlueprintName = "ToDo-UIKit"
-            ReferencedContainer = "container:ToDo-UIKit.xcodeproj">
+            BuildableName = "TDDToDo.app"
+            BlueprintName = "TDDToDo"
+            ReferencedContainer = "container:TDDToDo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -90,9 +90,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F72F9F5F2B5981770025990F"
-            BuildableName = "ToDo-UIKit.app"
-            BlueprintName = "ToDo-UIKit"
-            ReferencedContainer = "container:ToDo-UIKit.xcodeproj">
+            BuildableName = "TDDToDo.app"
+            BlueprintName = "TDDToDo"
+            ReferencedContainer = "container:TDDToDo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

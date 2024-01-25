@@ -1,13 +1,13 @@
 //
 //  ToDoItemsListViewControllerProtocolMock.swift
-//  ToDo-UIKitTests
+//  TDDToDoTests
 //
 //  Created by Spencer Jones on 1/22/24.
 //
 
 import Foundation
 import UIKit
-@testable import ToDo_UIKit
+@testable import TDDToDo
 
 class ToDoItemsListViewControllerProtocolMock: ToDoItemsListViewControllerProtocol {
     

@@ -1,13 +1,13 @@
 //
 //  ToDoItemStoreProtocolMock.swift
-//  ToDo-UIKitTests
+//  TDDToDoTests
 //
 //  Created by Spencer Jones on 1/21/24.
 //
 
 import Combine
 import Foundation
-@testable import ToDo_UIKit
+@testable import TDDToDo
 
 class ToDoItemStoreProtocolMock: ToDoItemStoreProtocol {
     

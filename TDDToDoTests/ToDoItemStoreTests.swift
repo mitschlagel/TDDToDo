@@ -1,13 +1,13 @@
 //
 //  ToDoItemStoreTests.swift
-//  ToDo-UIKitTests
+//  TDDToDoTests
 //
 //  Created by Spencer Jones on 1/20/24.
 //
 
 import Combine
 import XCTest
-@testable import ToDo_UIKit
+@testable import TDDToDo
 
 final class ToDoItemStoreTests: XCTestCase {
 

@@ -9,12 +9,98 @@ import XCTest
 @testable import TDDToDo
 
 final class ToDoItemDetailsViewControllerTests: XCTestCase {
+    
+    var sut: ToDoItemDetailsViewController!
 
     override func setUpWithError() throws {
-        var sut: ToDoItemDetailsViewControllerTests!
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        sut = (storyboard.instantiateViewController(withIdentifier: "ToDoItemDetailsViewController") as! ToDoItemDetailsViewController)
+        sut.loadViewIfNeeded()
+        
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
+    }
+    
+    func test_view_shouldHaveTitleLabel() throws {
+        let subview = try XCTUnwrap(sut.titleLabel)
+        XCTAssertTrue(subview.isDescendant(of: sut.view))
+    }
+    
+    func test_view_shouldHaveDateLabel() throws {
+        let subview = try XCTUnwrap(sut.dateLabel)
+        XCTAssertTrue(subview.isDescendant(of: sut.view))
+    }
+    
+    func test_view_shouldHaveLocationLabel() throws {
+        let subview = try XCTUnwrap(sut.locationLabel)
+        XCTAssertTrue(subview.isDescendant(of: sut.view))
+    }
+    
+    func test_view_shouldHaveDescriptionLabel() throws {
+        let subview = try XCTUnwrap(sut.descriptionLabel)
+        XCTAssertTrue(subview.isDescendant(of: sut.view))
+    }
+    
+    func test_view_shouldHaveMapView() throws {
+        let mapView = try XCTUnwrap(sut.mapView)
+        XCTAssertTrue(mapView.isDescendant(of: sut.view))
+    }
+    
+    func test_view_shouldHaveDoneButton() throws {
+        let subview = try XCTUnwrap(sut.doneButton)
+        XCTAssertTrue(subview.isDescendant(of: sut.view))
+    }
+    
+    func test_settingToDoItem_shouldUpdateTitleLabel() {
+        let title = "foo title"
+        let toDoItem = ToDoItem(title: title)
+        sut.toDoItem = toDoItem
+        XCTAssertEqual(sut.titleLabel.text, title)
+    }
+    
+    func test_settingToDoItem_shouldUpdateDateLabel() {
+        let date = Date()
+        let toDoItem = ToDoItem(title: "foo title", timestamp: date.timeIntervalSince1970)
+        sut.toDoItem = toDoItem
+        XCTAssertEqual(sut.dateLabel.text, sut.dateFormatter.string(from: date))
+    }
+    
+    func test_settingToDoItem_shouldUpdateDescriptionLabel() {
+        let description = "foo description"
+        let toDoItem = ToDoItem(title: "foo title", itemDescription: description)
+        sut.toDoItem = toDoItem
+        XCTAssertEqual(sut.descriptionLabel.text, description)
+    }
+    
+    func test_settingToDoItem_shouldUpdateLocationLabel() {
+        let location = Location(name: "foo location")
+        let toDoItem = ToDoItem(title: "foo title", location: location)
+        sut.toDoItem = toDoItem
+        XCTAssertEqual(sut.locationLabel.text, location.name)
+    }
+    
+    func test_settingToDoItem_shouldUpdateMapView() {
+        let latitude = 51.225556
+        let longitude = 6.782778
+        let toDoItem = ToDoItem(title: "foo title", location: Location(name: "foo location", coordinate: Coordinate(latitude: latitude, longitude: longitude)))
+        sut.toDoItem = toDoItem
+        let center = sut.mapView.centerCoordinate
+        XCTAssertEqual(center.latitude, latitude, accuracy: 0.000_01)
+        XCTAssertEqual(center.longitude, longitude, accuracy: 0.000_01)
+    }
+    
+    func test_settingToDoItem_shouldUpdateButtonState() {
+        var toDoItem = ToDoItem(title: "foo title")
+        toDoItem.done = true
+        sut.toDoItem = toDoItem
+        XCTAssertFalse(sut.doneButton.isEnabled)
+    }
+    
+    func test_settingToDoItem_whenItemNotDone_shouldUpdateButtonState() {
+        let toDoItem = ToDoItem(title: "foo title")
+        sut.toDoItem = toDoItem
+        XCTAssertTrue(sut.doneButton.isEnabled)
     }
 }

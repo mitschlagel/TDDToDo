@@ -5,25 +5,34 @@
 //  Created by Spencer Jones on 1/24/24.
 //
 
+import MapKit
 import UIKit
 
 class ToDoItemDetailsViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    let dateFormatter = DateFormatter()
+    
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var locationLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var mapView: MKMapView!
+    
+    @IBOutlet var doneButton: UIButton!
+    
+    var toDoItem: ToDoItem? {
+        didSet {
+            titleLabel.text = toDoItem?.title
+            dateLabel.text = dateFormatter.string(from: Date(timeIntervalSince1970: toDoItem?.timestamp ?? Date().timeIntervalSince1970))
+            locationLabel.text = toDoItem?.location?.name
+            descriptionLabel.text = toDoItem?.itemDescription
+            
+            if let coordinate = toDoItem?.location?.coordinate {
+                mapView.setCenter(CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude), animated: false)
+            }
+            
+            doneButton.isEnabled = (toDoItem?.done == false)
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

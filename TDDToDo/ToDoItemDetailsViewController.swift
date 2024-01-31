@@ -20,6 +20,8 @@ class ToDoItemDetailsViewController: UIViewController {
     
     @IBOutlet var doneButton: UIButton!
     
+    var toDoItemStore: ToDoItemStoreProtocol?
+    
     var toDoItem: ToDoItem? {
         didSet {
             titleLabel.text = toDoItem?.title
@@ -32,6 +34,13 @@ class ToDoItemDetailsViewController: UIViewController {
             }
             
             doneButton.isEnabled = (toDoItem?.done == false)
+        }
+    }
+    
+    
+    @IBAction func checkItem(_ sender: UIButton) {
+        if let toDoItem = toDoItem {
+            toDoItemStore?.check(toDoItem)
         }
     }
     

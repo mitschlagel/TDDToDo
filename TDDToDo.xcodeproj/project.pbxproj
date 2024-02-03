@@ -31,6 +31,10 @@
 		F72F9FAF2B5E25800025990F /* ToDoItemCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F9FAE2B5E25800025990F /* ToDoItemCellTests.swift */; };
 		F78A71342B621CFF006797F9 /* ToDoItemDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A71332B621CFF006797F9 /* ToDoItemDetailsViewControllerTests.swift */; };
 		F78A71362B621D64006797F9 /* ToDoItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A71352B621D64006797F9 /* ToDoItemDetailsViewController.swift */; };
+		F796B7552B6DF485008474E0 /* ToDoItemInputViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7542B6DF485008474E0 /* ToDoItemInputViewTests.swift */; };
+		F796B7572B6DF4F1008474E0 /* ToDoItemInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7562B6DF4F1008474E0 /* ToDoItemInputView.swift */; };
+		F796B7592B6DF543008474E0 /* ToDoItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7582B6DF543008474E0 /* ToDoItemData.swift */; };
+		F796B75C2B6DFA00008474E0 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = F796B75B2B6DFA00008474E0 /* ViewInspector */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,9 @@
 		F72F9FAE2B5E25800025990F /* ToDoItemCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemCellTests.swift; sourceTree = "<group>"; };
 		F78A71332B621CFF006797F9 /* ToDoItemDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemDetailsViewControllerTests.swift; sourceTree = "<group>"; };
 		F78A71352B621D64006797F9 /* ToDoItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemDetailsViewController.swift; sourceTree = "<group>"; };
+		F796B7542B6DF485008474E0 /* ToDoItemInputViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemInputViewTests.swift; sourceTree = "<group>"; };
+		F796B7562B6DF4F1008474E0 /* ToDoItemInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemInputView.swift; sourceTree = "<group>"; };
+		F796B7582B6DF543008474E0 /* ToDoItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F796B75C2B6DFA00008474E0 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +154,8 @@
 				F72F9FA22B5CA4110025990F /* FileManagerExtension.swift */,
 				F72F9FAC2B5E22050025990F /* ToDoItemCell.swift */,
 				F78A71352B621D64006797F9 /* ToDoItemDetailsViewController.swift */,
+				F796B7562B6DF4F1008474E0 /* ToDoItemInputView.swift */,
+				F796B7582B6DF543008474E0 /* ToDoItemData.swift */,
 			);
 			path = TDDToDo;
 			sourceTree = "<group>";
@@ -154,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				F7191B702B5F77D2009D1735 /* ToDoItemsListViewControllerProtocolMock.swift */,
+				F796B7542B6DF485008474E0 /* ToDoItemInputViewTests.swift */,
 				F72F9F942B5B2A390025990F /* ToDoItemTests.swift */,
 				F72F9F9A2B5B31950025990F /* LocationTests.swift */,
 				F72F9F9C2B5C67ED0025990F /* ToDoItemStoreTests.swift */,
@@ -190,6 +201,8 @@
 			dependencies = (
 			);
 			name = TDDToDo;
+			packageProductDependencies = (
+			);
 			productName = "ToDo-UIKit";
 			productReference = F72F9F602B5981770025990F /* TDDToDo.app */;
 			productType = "com.apple.product-type.application";
@@ -208,6 +221,9 @@
 				F72F9F782B59818E0025990F /* PBXTargetDependency */,
 			);
 			name = TDDToDoTests;
+			packageProductDependencies = (
+				F796B75B2B6DFA00008474E0 /* ViewInspector */,
+			);
 			productName = "ToDo-UIKitTests";
 			productReference = F72F9F762B59818E0025990F /* TDDToDoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -262,6 +278,9 @@
 				Base,
 			);
 			mainGroup = F72F9F572B5981770025990F;
+			packageReferences = (
+				F796B75A2B6DFA00008474E0 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = F72F9F612B5981770025990F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -307,6 +326,7 @@
 			files = (
 				F72F9FA12B5C9F6D0025990F /* Coordinate.swift in Sources */,
 				F72F9F682B5981770025990F /* ViewController.swift in Sources */,
+				F796B7572B6DF4F1008474E0 /* ToDoItemInputView.swift in Sources */,
 				F72F9FAD2B5E22050025990F /* ToDoItemCell.swift in Sources */,
 				F78A71362B621D64006797F9 /* ToDoItemDetailsViewController.swift in Sources */,
 				F72F9F642B5981770025990F /* AppDelegate.swift in Sources */,
@@ -314,6 +334,7 @@
 				F72F9F972B5B2ADD0025990F /* ToDoItem.swift in Sources */,
 				F72F9FA32B5CA4110025990F /* FileManagerExtension.swift in Sources */,
 				F72F9FA92B5E189D0025990F /* ToDoItemsListViewController.swift in Sources */,
+				F796B7592B6DF543008474E0 /* ToDoItemData.swift in Sources */,
 				F72F9F9F2B5C6B130025990F /* ToDoItemStore.swift in Sources */,
 				F72F9F662B5981770025990F /* SceneDelegate.swift in Sources */,
 			);
@@ -323,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F796B7552B6DF485008474E0 /* ToDoItemInputViewTests.swift in Sources */,
 				F78A71342B621CFF006797F9 /* ToDoItemDetailsViewControllerTests.swift in Sources */,
 				F72F9FA52B5E17CF0025990F /* ToDoItemsListViewControllerTests.swift in Sources */,
 				F72F9F9D2B5C67ED0025990F /* ToDoItemStoreTests.swift in Sources */,
@@ -666,6 +688,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F796B75A2B6DFA00008474E0 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F796B75B2B6DFA00008474E0 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F796B75A2B6DFA00008474E0 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F72F9F582B5981770025990F /* Project object */;
 }

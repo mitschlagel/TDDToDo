@@ -26,11 +26,18 @@ final class ToDoItemInputViewTests: XCTestCase {
         toDoItemData = nil
     }
     
-    func test_titleInput_shouldSetValueInData() throws {
+    func test_titleInput_shouldAllowTitleInput() throws {
         let expected = "foo title"
         try sut
             .inspect()
-            .find(ViewType.TextField.self)
+            .find(ViewType.TextField.self,
+                  where: { view in
+                let label = try view
+                    .labelView()
+                    .text()
+                    .string()
+                return label == "Title"
+            })
             .setInput(expected)
         
         let input = toDoItemData.title
@@ -44,21 +51,52 @@ final class ToDoItemInputViewTests: XCTestCase {
             .find(ViewType.DatePicker.self))
     }
     
-    func test_whenWithDate_shouldAllowDateInput() throws {
-        let exp = sut.on(\.didAppear) { view in
-            try view.find(ViewType.Toggle.self).tap()
-            
-            let expected = Date(timeIntervalSinceNow: 1_000_000)
-            try view
-                .find(ViewType.DatePicker.self)
-                .select(date: expected)
+    // Toggle.tap() unavailable >= iOS16
+    func whenWithDate_shouldAllowDateInput() throws {
+        let expected = Date()
+        try sut.inspect().find(ViewType.Toggle.self).tap()
+        try sut
+            .inspect()
+            .find(ViewType.DatePicker.self)
+            .select(date: expected)
         
-            let input = self.toDoItemData.date
-            XCTAssertEqual(input, expected)
-        }
+        let input = self.toDoItemData.date
+        XCTAssertEqual(input, expected)
+    }
+    
+    func test_shouldAllowDescriptionInput() throws {
+        let expected = "foo description"
+        try sut
+            .inspect()
+            .find(ViewType.TextField.self,
+                  where: { view in
+                let label = try view
+                    .labelView()
+                    .text()
+                    .string()
+                return label == "Description"
+            })
+            .setInput(expected)
         
-        ViewHosting.host(view: sut) // This is what renders the view and makes working with @State possible
-        wait(for: [exp], timeout: 0.1)
+        let input = toDoItemData.itemDescription
+        XCTAssertEqual(input, expected)
+    }
+    
+    func test_shouldAllowLocationNameInput() throws {
+        let expected = "foo location"
+        try sut
+            .inspect()
+            .find(ViewType.TextField.self,
+                  where: { view in
+                let label = try view
+                    .labelView()
+                    .text()
+                    .string()
+                return label == "Location"
+            })
+            .setInput(expected)
+        let input = toDoItemData.locationName
+        XCTAssertEqual(input, expected)
     }
 
 

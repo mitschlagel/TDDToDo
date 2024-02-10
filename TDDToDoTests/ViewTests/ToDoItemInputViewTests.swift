@@ -53,7 +53,7 @@ final class ToDoItemInputViewTests: XCTestCase {
     }
     
     // Toggle.tap() unavailable >= iOS16
-    func whenWithDate_shouldAllowDateInput() throws {
+    func x_test_whenWithDate_shouldAllowDateInput() throws {
         let expected = Date()
         try sut.inspect().find(ViewType.Toggle.self).tap()
         try sut

@@ -15,7 +15,7 @@ final class ToDoItemsListViewControllerTests: XCTestCase {
     
     override func setUpWithError() throws {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        sut = try XCTUnwrap(storyboard.instantiateInitialViewController() as? ToDoItemsListViewController)
+        sut = try XCTUnwrap(storyboard.instantiateViewController(withIdentifier: "ToDoItemsListViewController") as? ToDoItemsListViewController)
         toDoItemStoreMock = ToDoItemStoreProtocolMock()
         sut.toDoItemStore = toDoItemStoreMock
         sut.loadViewIfNeeded()

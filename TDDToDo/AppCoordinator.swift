@@ -70,5 +70,6 @@ extension AppCoordinator: ToDoItemInputViewDelegate {
                                 location: location)
         
         toDoItemStore.add(toDoItem)
+        navigationController.dismiss(animated: true)
     }
 }

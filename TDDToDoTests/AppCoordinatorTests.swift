@@ -83,6 +83,15 @@ final class AppCoordinatorTests: XCTestCase {
         
         XCTAssertEqual(receivedItems.first?.title, toDoItemData.title)
     }
+    
+    func test_addToDoItemWith_shouldDismissInput() {
+        let toDoItemData = ToDoItemData()
+        toDoItemData.title = "fake title"
+        
+        sut.addToDoItem(with: toDoItemData, coordinate: nil)
+        
+        XCTAssertEqual(navigationControllerMock.dismissCallCount, 1)
+    }
 
 
 

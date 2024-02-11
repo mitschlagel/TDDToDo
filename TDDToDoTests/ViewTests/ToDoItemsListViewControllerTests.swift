@@ -33,7 +33,7 @@ final class ToDoItemsListViewControllerTests: XCTestCase {
         XCTAssertTrue(sut.tableView.isDescendant(of: sut.view))
     }
     
-    func test_numberOfRos_whenOneItemIsSent_shouldReturnOne() {
+    func test_numberOfRows_whenOneItemIsSent_shouldReturnOne() {
         toDoItemStoreMock.itemPublisher
             .send([ToDoItem(title: "foo 1")])
         
@@ -110,9 +110,13 @@ final class ToDoItemsListViewControllerTests: XCTestCase {
     func test_didSelectCellAt_shouldCallDelegate() throws {
         let delegateMock = ToDoItemsListViewControllerProtocolMock()
         sut.delegate = delegateMock
+        var doneItem = ToDoItem(title: "done item")
+        doneItem.done = true
+        
+        
         let toDoItem = ToDoItem(title: "mock 1")
         toDoItemStoreMock.itemPublisher
-            .send([toDoItem])
+            .send([doneItem, toDoItem])
         let tableView = try XCTUnwrap(sut.tableView)
         
         let indexPath = IndexPath(row: 0, section: 0)
@@ -131,6 +135,10 @@ final class ToDoItemsListViewControllerTests: XCTestCase {
         _ = target.perform(action, with: addButton)
         
         XCTAssertEqual(delegateMock.addToDoItemCallCount, 1)
+    }
+    
+    func test_dateFormatter_shoultNoteBeNone() {
+        XCTAssertNotEqual(sut.dateFormatter.dateStyle, .none)
     }
     
 }

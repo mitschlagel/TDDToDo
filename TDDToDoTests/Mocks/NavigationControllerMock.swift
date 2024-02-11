@@ -10,6 +10,12 @@ import UIKit
 
 class NavigationControllerMock: UINavigationController {
     var lastPushedViewController: UIViewController?
+    var dismissCallCount = 0
+    
+    override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
+        dismissCallCount += 1
+        super.dismiss(animated: flag, completion: completion)
+    }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         lastPushedViewController = viewController

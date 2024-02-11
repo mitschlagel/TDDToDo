@@ -24,10 +24,16 @@ class ToDoItemsListViewController: UIViewController {
     private var items: [ToDoItem] = []
     private var token: AnyCancellable?
     
-    let dateFormatter = DateFormatter()
+    var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        return formatter
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dateFormatter.dateStyle = .short
         
         dataSource = UITableViewDiffableDataSource<Section, ToDoItem>(tableView: tableView, cellProvider: { [weak self] tableView, indexPath, item in
             let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoItemCell",
@@ -55,6 +61,21 @@ class ToDoItemsListViewController: UIViewController {
         navigationItem.rightBarButtonItem = addItem
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        token = toDoItemStore?.itemPublisher
+            .sink(receiveValue: { [weak self ] items in
+                self?.items = items
+                self?.update(with: items)
+            })
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        token?.cancel()
+    }
+    
     @objc func add(_ sender: UIBarButtonItem) {
         delegate?.addToDoItem(self)
     }
@@ -77,7 +98,15 @@ class ToDoItemsListViewController: UIViewController {
 extension ToDoItemsListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let item = items[indexPath.row]
+        let item: ToDoItem
+        switch indexPath.section {
+        case 0:
+            let filteredItems = items.filter({ false == $0.done })
+            item = filteredItems[indexPath.row]
+        default:
+            let filteredItems = items.filter({ true == $0.done })
+            item = filteredItems[indexPath.row]
+        }
         delegate?.selectToDoItem(self, item: item)
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 import UIKit
 
 protocol Coordinator {
@@ -19,15 +20,14 @@ class AppCoordinator: Coordinator {
     
     let toDoItemStore: ToDoItemStore
     
-    init(window: UIWindow?, navigationController: UINavigationController = UINavigationController()) {
+    init(window: UIWindow?, navigationController: UINavigationController = UINavigationController(), toDoItemStore: ToDoItemStore = ToDoItemStore()) {
         
         self.window = window
         self.navigationController = navigationController
+        self.toDoItemStore = toDoItemStore
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         viewController = storyboard.instantiateViewController(withIdentifier: "ToDoItemsListViewController")
-        
-        toDoItemStore = ToDoItemStore()
     }
     
     func start() {
@@ -42,6 +42,33 @@ class AppCoordinator: Coordinator {
 
 extension AppCoordinator: ToDoItemsListViewControllerProtocol {
     func selectToDoItem(_ viewController: UIViewController, item: ToDoItem) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let next = storyboard.instantiateViewController(withIdentifier: "ToDoItemDetailsViewController")
+                as? ToDoItemDetailsViewController else { return }
         
+        next.loadViewIfNeeded()
+        next.toDoItem = item
+        next.toDoItemStore = toDoItemStore
+        
+        navigationController.pushViewController(next, animated: true)
+    }
+    
+    func addToDoItem(_ viewController: UIViewController) {
+        let data = ToDoItemData()
+        let next = UIHostingController(rootView: ToDoItemInputView(data: data, delegate: self, apiClient: APIClient()))
+        
+        viewController.present(next, animated: true)
+    }
+}
+
+extension AppCoordinator: ToDoItemInputViewDelegate {
+    func addToDoItem(with data: ToDoItemData, coordinate: Coordinate?) {
+        let location = Location(name: data.locationName, coordinate: coordinate)
+        let toDoItem = ToDoItem(title: data.title,
+                                itemDescription: data.itemDescription,
+                                timestamp: data.date.timeIntervalSince1970,
+                                location: location)
+        
+        toDoItemStore.add(toDoItem)
     }
 }

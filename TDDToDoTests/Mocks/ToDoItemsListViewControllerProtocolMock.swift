@@ -17,4 +17,9 @@ class ToDoItemsListViewControllerProtocolMock: ToDoItemsListViewControllerProtoc
         selectToDoItemReceivedArguments = (viewController, item)
         
     }
+    
+    var addToDoItemCallCount = 0
+    func addToDoItem(_ viewController: UIViewController) {
+        addToDoItemCallCount += 1
+    }
 }
